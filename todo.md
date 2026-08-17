@@ -1,4 +1,22 @@
-# Ajustes solicitados — mobile-first, pôr do sol e galerias
+# Nova etapa — home inspirada na Senhorita Moda Modesta
+
+- [ ] Analisar a hierarquia visual e os blocos principais da página de referência.
+- [ ] Adaptar a estrutura de loja sem copiar identidade, textos ou imagens proprietárias.
+- [ ] Criar uma home mobile-first com banner, categorias, novidades e CTAs de compra.
+- [ ] Usar as cores de pôr do sol e referências cristãs definidas para a Jeová Jireh.
+- [ ] Preparar galerias para receber fotos reais das roupas da loja.
+- [ ] Validar a primeira dobra e a navegação em celular.
+
+## Etapas anteriores
+
+- [ ] Pesquisar lojas brasileiras que combinam moda modesta e fardamento.
+- [ ] Comparar proposta, categorias, linguagem, atendimento, prova social e diferenciais visíveis.
+- [ ] Definir uma proposta de valor própria para a Jeová Jireh.
+- [ ] Criar uma primeira tela com produto, benefício claro, prova de qualidade e CTA imediato.
+- [ ] Usar gatilhos éticos: clareza, identificação, segurança, conveniência, curadoria e urgência apenas quando real.
+- [ ] Melhorar a jornada mobile para levar do clique à conversa em poucos passos.
+
+## Ajustes mobile e conteúdo
 
 - [ ] Fazer do celular o layout principal, sem depender de versão desktop.
 - [ ] Colocar o WhatsApp em botão fixo e grande, sempre acessível no rodapé da tela.

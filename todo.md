@@ -1,4 +1,11 @@
-# Nova etapa — carrossel responsivo estruturado
+# Correção pontual — segundo banner
+
+- [ ] Remover o zoom aplicado ao segundo banner.
+- [ ] Usar enquadramento que preserve a arte completa do frete grátis.
+- [ ] Manter o primeiro banner sem alterações.
+- [ ] Validar o segundo slide em celular e desktop.
+
+## Etapas anteriores
 
 - [ ] Usar as imagens enviadas como base visual, sem depender da arte inteira como banner rígido.
 - [ ] Separar título, preço, benefício e CTA em HTML editável.

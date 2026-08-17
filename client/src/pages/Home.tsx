@@ -1,11 +1,13 @@
 // Direção visual: loja mobile-first com clima de pôr do sol frio, linguagem simples, referências de luz/terra/linho e foco em atendimento por WhatsApp.
 import { ArrowRight, ArrowUpRight, ChevronRight, Instagram, MapPin, Menu, MessageCircle, Search, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const heroImage = "/manus-storage/jeova-hero-editorial_daf7e197.jpg";
 const dressesImage = "/manus-storage/jeova-categorias-vestidos_99c68712.jpg";
 const uniformsImage = "/manus-storage/jeova-fardamentos-atelier_53f367bb.jpg";
 const markImage = "/manus-storage/jeova-simbolo_dc19085a.png";
+const bannerVestido = "/manus-storage/jeova-banner-vestido_e64ec153.png";
+const bannerFrete = "/manus-storage/jeova-banner-frete_8e2fbc67.png";
 const whatsappUrl = "https://wa.me/5527988807140";
 
 const categories = [
@@ -13,6 +15,11 @@ const categories = [
   { name: "Conjuntos", image: heroImage, alt: "Conjunto modesto" },
   { name: "Fardamentos", image: uniformsImage, alt: "Fardamentos para igrejas" },
   { name: "Novidades", image: dressesImage, alt: "Novidades da loja" },
+];
+
+const banners = [
+  { image: bannerVestido, alt: "Vestido Sensorial com desconto exclusivo", href: whatsappUrl },
+  { image: bannerFrete, alt: "Frete grátis em compras acima de duzentos e noventa e nove reais", href: whatsappUrl },
 ];
 
 const products = [
@@ -32,7 +39,13 @@ function ProductCard({ product }: { product: (typeof products)[number] }) {
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [slide, setSlide] = useState(0);
   const closeMenu = () => setMenuOpen(false);
+
+  useEffect(() => {
+    const timer = window.setInterval(() => setSlide((current) => (current + 1) % banners.length), 5000);
+    return () => window.clearInterval(timer);
+  }, []);
 
   return (
     <main className="shop-shell">
@@ -46,6 +59,15 @@ export default function Home() {
         </nav>
         <div className="header-actions"><button aria-label="Buscar"><Search size={19} /></button><button className="menu-button" aria-label={menuOpen ? "Fechar menu" : "Abrir menu"} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X size={22} /> : <Menu size={22} />}</button></div>
       </header>
+
+      <section className="offer-carousel" aria-label="Ofertas em destaque">
+        <div className="offer-track" style={{ transform: `translateX(-${slide * 100}%)` }}>
+          {banners.map((banner, index) => <a className="offer-slide" href={banner.href} target="_blank" rel="noreferrer" aria-label={`Ver oferta ${index + 1}`} key={banner.image}><img src={banner.image} alt={banner.alt} /></a>)}
+        </div>
+        <button className="offer-arrow offer-prev" aria-label="Oferta anterior" onClick={() => setSlide((slide - 1 + banners.length) % banners.length)}><ChevronRight size={22} /></button>
+        <button className="offer-arrow offer-next" aria-label="Próxima oferta" onClick={() => setSlide((slide + 1) % banners.length)}><ChevronRight size={22} /></button>
+        <div className="offer-dots">{banners.map((banner, index) => <button key={banner.image} aria-label={`Ir para oferta ${index + 1}`} className={index === slide ? "active" : ""} onClick={() => setSlide(index)} />)}</div>
+      </section>
 
       <section id="inicio" className="shop-hero">
         <div className="hero-text"><p className="eyebrow">Vista-se com propósito</p><h1>Roupa bonita<br /><em>para você.</em></h1><p className="hero-description">Vestidos, conjuntos e fardamentos para a sua rotina, para a igreja e para os dias especiais.</p><div className="hero-actions"><a className="shop-button" href="#novidades">Ver novidades <ArrowRight size={17} /></a><a className="hero-link" href={whatsappUrl} target="_blank" rel="noreferrer">Precisa de ajuda? <ArrowUpRight size={15} /></a></div></div>

@@ -1,4 +1,13 @@
-# Nova etapa — home inspirada na Senhorita Moda Modesta
+# Nova etapa — carrossel de ofertas no topo
+
+- [ ] Usar os dois banners enviados pelo usuário como slides reais.
+- [ ] Colocar o carrossel imediatamente abaixo da navegação principal.
+- [ ] Adicionar CTA clicável em cada slide sem alterar as informações da arte.
+- [ ] Implementar autoplay suave, setas, indicadores e pausa ao toque.
+- [ ] Garantir que o banner preserve leitura e proporção no celular.
+- [ ] Confirmar que ofertas e condições precisam ser atualizadas pela loja antes de publicar.
+
+## Etapas anteriores
 
 - [ ] Analisar a hierarquia visual e os blocos principais da página de referência.
 - [ ] Adaptar a estrutura de loja sem copiar identidade, textos ou imagens proprietárias.

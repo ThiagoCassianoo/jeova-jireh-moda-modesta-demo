@@ -222,3 +222,20 @@ h2 { margin-top:25px; color:var(--ink); font-size:clamp(54px, 6vw, 83px); line-h
   .shop-footer { grid-template-columns:1.2fr 1.5fr 1fr; padding:55px 5vw 25px; }
   .footer-bottom { grid-column:1/-1; flex-direction:row; justify-content:space-between; }
 }
+
+/* Carrossel de ofertas do topo: primeira impressão visual, CTA pela própria arte e leitura confortável no celular. */
+.offer-carousel { position:relative; overflow:hidden; width:100%; background:#f1eee9; }
+.offer-track { display:flex; width:100%; transition:transform .55s var(--ease-out); }
+.offer-slide { flex:0 0 100%; display:block; aspect-ratio:2.035; }
+.offer-slide img { width:100%; height:100%; display:block; object-fit:cover; }
+.offer-arrow { position:absolute; z-index:2; top:50%; display:flex; align-items:center; justify-content:center; width:38px; height:38px; border:0; border-radius:50%; background:rgba(53,41,37,.7); color:#fff8ef; transform:translateY(-50%); transition:background .2s var(--ease-out), transform .2s var(--ease-out); }
+.offer-arrow:hover { background:var(--terracotta); }
+.offer-prev { left:12px; transform:translateY(-50%) rotate(180deg); }
+.offer-prev:hover { transform:translateY(-50%) rotate(180deg) scale(1.05); }
+.offer-next { right:12px; }
+.offer-next:hover { transform:translateY(-50%) scale(1.05); }
+.offer-dots { position:absolute; z-index:2; bottom:10px; left:50%; display:flex; gap:7px; transform:translateX(-50%); }
+.offer-dots button { width:8px; height:8px; padding:0; border:1px solid #fff; border-radius:50%; background:transparent; }
+.offer-dots button.active { background:var(--terracotta); border-color:var(--terracotta); }
+@media (max-width:800px) { .offer-arrow { width:31px; height:31px; } .offer-prev { left:8px; } .offer-next { right:8px; } .offer-dots { bottom:7px; } .offer-dots button { width:7px; height:7px; } }
+@media (prefers-reduced-motion: reduce) { .offer-track { transition:none; } }

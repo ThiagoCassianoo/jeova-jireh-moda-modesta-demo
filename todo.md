@@ -1,4 +1,21 @@
-# Correção pontual — segundo banner
+# Nova etapa — nova logomarca e tipografia
+
+- [ ] Preparar a logomarca enviada para uso sobre fundo claro.
+- [ ] Substituir o símbolo atual no cabeçalho, rodapé, carrossel e favicon visual.
+- [ ] Usar uma tipografia caligráfica compatível com o novo wordmark.
+- [ ] Manter a paleta terracota, creme, marrom e azul do céu.
+- [ ] Ajustar tamanhos e contraste para a marca continuar legível no celular.
+- [ ] Validar a aplicação em mobile e desktop.
+
+## Etapas anteriores
+
+- [ ] Usar a nova arte horizontal enviada pelo usuário.
+- [ ] Substituir os dois slides atuais pela nova composição visual.
+- [ ] Preservar a proporção 1024 × 369 px sem cortes.
+- [ ] Ajustar o carrossel para manter leitura no celular e no desktop.
+- [ ] Validar o primeiro acesso e o clique para WhatsApp.
+
+## Etapas anteriores
 
 - [ ] Remover o zoom aplicado ao segundo banner.
 - [ ] Usar enquadramento que preserve a arte completa do frete grátis.

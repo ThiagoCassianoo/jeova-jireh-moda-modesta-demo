@@ -269,3 +269,33 @@ h2 { margin-top:25px; color:var(--ink); font-size:clamp(54px, 6vw, 83px); line-h
   .offer-button { gap:5px; padding:8px 13px; font-size:10px; }
   .offer-dots { bottom:5px; }
 }
+
+/* Nova identidade: wordmark caligráfico enviado pela cliente, aplicado sobre a mesma paleta terracota e creme. */
+.brand { display:flex; align-items:center; flex:0 0 auto; }
+.brand-logo { display:block; width:152px; height:54px; object-fit:contain; object-position:center; }
+.about-strip > img { width:120px; height:74px; object-fit:contain; }
+.footer-brand { display:flex; align-items:center; }
+.footer-brand img { width:220px; height:92px; object-fit:contain; object-position:left center; }
+@media (max-width:800px) {
+  .brand-logo { width:126px; height:47px; }
+  .about-strip > img { width:105px; height:64px; }
+  .footer-brand img { width:190px; height:78px; }
+}
+
+/* Ajuste final do wordmark compacto: escala maior no cabeçalho e aplicação proporcional no rodapé. */
+.brand-logo { width:180px; height:62px; }
+.about-strip > img { width:145px; height:76px; }
+.footer-brand img { width:245px; height:100px; }
+@media (max-width:800px) {
+  .brand-logo { width:150px; height:54px; }
+  .about-strip > img { width:125px; height:66px; }
+  .footer-brand img { width:215px; height:88px; }
+}
+
+/* A versão original da marca conserva o desenho real; screen elimina visualmente o fundo preto sobre a base clara. */
+.brand-logo, .about-strip > img, .footer-brand img { mix-blend-mode:screen; }
+
+/* A marca agora já possui transparência real; suas cores originais devem aparecer sem mistura. */
+.brand-logo, .about-strip > img, .footer-brand img { mix-blend-mode:normal; }
+
+.brand-logo, .about-strip > img, .footer-brand img { filter:saturate(1.35) contrast(1.12); }

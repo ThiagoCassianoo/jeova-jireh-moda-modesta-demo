@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const heroImage = "/manus-storage/jeova-hero-editorial_daf7e197.jpg";
 const dressesImage = "/manus-storage/jeova-categorias-vestidos_99c68712.jpg";
 const uniformsImage = "/manus-storage/jeova-fardamentos-atelier_53f367bb.jpg";
-const markImage = "/manus-storage/jeova-simbolo_dc19085a.png";
+const markImage = "/manus-storage/jeova-jireh-logo-transparent_21012a06.png";
 const bannerVestido = "/manus-storage/jeova-banner-vestido_e64ec153.png";
 const bannerFrete = "/manus-storage/jeova-banner-frete_8e2fbc67.png";
 const whatsappUrl = "https://wa.me/5527988807140";
@@ -52,7 +52,7 @@ export default function Home() {
       <div className="benefit-bar"><span>Moda modesta para vestir bem</span><span>Atendimento rápido no WhatsApp</span><a href={whatsappUrl} target="_blank" rel="noreferrer">Chamar agora <ArrowUpRight size={13} /></a></div>
 
       <header className="shop-header">
-        <a className="brand" href="#inicio" aria-label="Jeová Jireh Moda Modesta"><img src={markImage} alt="" className="brand-mark" /><span><strong>Jeová Jireh</strong><small>Moda Modesta</small></span></a>
+        <a className="brand" href="#inicio" aria-label="Jeová Jireh Moda Modesta"><img src={markImage} alt="Jeová Jireh Moda Modesta" className="brand-logo" /></a>
         <nav className={menuOpen ? "shop-nav open" : "shop-nav"}>
           <a href="#categorias" onClick={closeMenu}>Categorias</a><a href="#novidades" onClick={closeMenu}>Novidades</a><a href="#fardamentos" onClick={closeMenu}>Fardamentos</a><a href="#sobre" onClick={closeMenu}>A loja</a>
           <a className="nav-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer" onClick={closeMenu}><MessageCircle size={15} /> WhatsApp</a>
@@ -87,7 +87,7 @@ export default function Home() {
 
       <section id="sobre" className="about-strip"><img src={markImage} alt="" /><div><p className="eyebrow">Jeová Jireh Moda Modesta</p><h2>Você escolhe.<br /><em>A gente cuida.</em></h2></div><a className="shop-button outline" href={whatsappUrl} target="_blank" rel="noreferrer">Falar com a loja <MessageCircle size={16} /></a></section>
 
-      <footer className="shop-footer"><div className="footer-brand"><img src={markImage} alt="" /><div><strong>Jeová Jireh</strong><span>Moda Modesta</span></div></div><div className="footer-address"><p><MapPin size={15} /> Av. Argentina, 689 · Vista da Serra 1 · Serra/ES</p><p><MessageCircle size={15} /> (27) 98880-7140</p></div><div className="footer-social"><a href="https://www.instagram.com/jeovajireh_modamodesta/" target="_blank" rel="noreferrer"><Instagram size={17} /> Instagram</a><a href={whatsappUrl} target="_blank" rel="noreferrer">WhatsApp <ArrowUpRight size={14} /></a></div><div className="footer-bottom"><span>Vista-se com propósito.</span><span>© 2026 Jeová Jireh Moda Modesta</span></div></footer>
+      <footer className="shop-footer"><div className="footer-brand"><img src={markImage} alt="Jeová Jireh Moda Modesta" /></div><div className="footer-address"><p><MapPin size={15} /> Av. Argentina, 689 · Vista da Serra 1 · Serra/ES</p><p><MessageCircle size={15} /> (27) 98880-7140</p></div><div className="footer-social"><a href="https://www.instagram.com/jeovajireh_modamodesta/" target="_blank" rel="noreferrer"><Instagram size={17} /> Instagram</a><a href={whatsappUrl} target="_blank" rel="noreferrer">WhatsApp <ArrowUpRight size={14} /></a></div><div className="footer-bottom"><span>Vista-se com propósito.</span><span>© 2026 Jeová Jireh Moda Modesta</span></div></footer>
       <a className="mobile-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer"><MessageCircle size={19} /> Falar no WhatsApp</a>
     </main>
   );

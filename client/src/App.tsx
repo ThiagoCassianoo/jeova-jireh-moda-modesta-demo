@@ -28,7 +28,7 @@ function App() {
     <ErrorBoundary>
       <ThemeProvider
         defaultTheme="light"
-        // switchable
+        // Direção: boutique premium acolhedora, com marfim, areia e azul-petróleo.
       >
         <TooltipProvider>
           <Toaster />

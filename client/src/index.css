@@ -1,6 +1,6 @@
+/* Direção visual: boutique alto padrão, acolhedora e humana. Sem excesso de ornamentos; prioridade para espaço, tecido, tipografia editorial e atendimento. */
 @import "tailwindcss";
 @import "tw-animate-css";
-
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -12,166 +12,113 @@
   --color-foreground: var(--foreground);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-destructive: var(--destructive);
-  --color-destructive-foreground: var(--destructive-foreground);
   --color-border: var(--border);
-  --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
 }
 
 :root {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-600);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --radius: 0.65rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.235 0.015 65);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.235 0.015 65);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.235 0.015 65);
-  --secondary: oklch(0.98 0.001 286.375);
-  --secondary-foreground: oklch(0.4 0.015 65);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.141 0.005 285.823);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.623 0.214 259.815);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.623 0.214 259.815);
-}
-
-.dark {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-500);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.85 0.005 65);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.85 0.005 65);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.85 0.005 65);
-  --secondary: oklch(0.24 0.006 286.033);
-  --secondary-foreground: oklch(0.7 0.005 65);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground:  oklch(0.92 0.005 65);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.488 0.243 264.376);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.85 0.005 65);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground:  oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.488 0.243 264.376);
+  --background: oklch(0.975 0.012 83);
+  --foreground: oklch(0.23 0.018 55);
+  --card: oklch(0.99 0.008 83);
+  --card-foreground: oklch(0.23 0.018 55);
+  --primary: oklch(0.34 0.07 190);
+  --primary-foreground: oklch(0.98 0.01 83);
+  --border: oklch(0.86 0.02 75);
+  --ring: oklch(0.34 0.07 190);
+  --radius: 0.2rem;
+  --ink: #382f29;
+  --petrol: #174c55;
+  --paper: #f7f2e9;
+  --sand: #e7ddce;
+  --espresso: #5a4538;
+  --gold: #9b7b51;
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-  button:not(:disabled),
-  [role="button"]:not([aria-disabled="true"]),
-  [type="button"]:not(:disabled),
-  [type="submit"]:not(:disabled),
-  [type="reset"]:not(:disabled),
-  a[href],
-  select:not(:disabled),
-  input[type="checkbox"]:not(:disabled),
-  input[type="radio"]:not(:disabled) {
-    @apply cursor-pointer;
-  }
+  * { @apply border-border outline-ring/50; }
+  html { scroll-behavior: smooth; }
+  body { @apply bg-background text-foreground; margin: 0; font-family: "DM Sans", sans-serif; }
+  a { color: inherit; text-decoration: none; }
+  button, a { -webkit-tap-highlight-color: transparent; }
 }
 
-@layer components {
-  /**
-   * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
-   */
-  .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
-    padding-right: 1rem;
-  }
-
-  .flex {
-    min-height: 0;
-    min-width: 0;
-  }
-
-  @media (min-width: 640px) {
-    .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
-      padding-right: 1.5rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .container {
-      padding-left: 2rem; /* 32px - desktop padding */
-      padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
-    }
-  }
-}
+.site-shell { overflow: hidden; background: var(--paper); color: var(--ink); }
+.topline { display:flex; justify-content:space-between; align-items:center; padding:10px 5vw; background:var(--petrol); color:#f7f2e9; font-size:10px; letter-spacing:.12em; text-transform:uppercase; }
+.topline a,.topline span { display:flex; align-items:center; gap:7px; }
+.topline a { opacity:.9; transition:opacity .2s var(--ease-out); }
+.topline a:hover { opacity:1; }
+.nav-wrap { display:flex; align-items:center; justify-content:space-between; padding:24px 5vw; background:var(--paper); position:relative; z-index:10; }
+.brand { display:flex; align-items:center; gap:12px; }
+.brand-mark { width:38px; height:38px; object-fit:contain; }
+.brand strong,.footer-brand strong { display:block; font:600 25px/1 "Cormorant Garamond", serif; letter-spacing:-.02em; }
+.brand small,.footer-brand span { display:block; margin-top:4px; color:var(--petrol); font-size:9px; letter-spacing:.24em; text-transform:uppercase; }
+.nav-links { display:flex; align-items:center; gap:30px; color:var(--espresso); font-size:12px; letter-spacing:.06em; }
+.nav-links a { transition:color .2s var(--ease-out); }
+.nav-links a:hover { color:var(--petrol); }
+.nav-cta { display:flex; align-items:center; gap:7px; color:var(--petrol)!important; font-weight:600; }
+.menu-button { display:none; border:0; background:none; color:var(--petrol); }
+.hero-section { display:grid; grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr); min-height:680px; padding-left:5vw; background:var(--paper); }
+.hero-copy { display:flex; flex-direction:column; justify-content:center; padding:62px 8vw 90px 0; }
+.section-label { display:flex; align-items:center; gap:12px; color:var(--petrol); font-size:10px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; }
+.section-label span,.tiny-rule { display:inline-block; width:28px; height:1px; background:var(--petrol); }
+h1,h2,h3 { margin:0; font-family:"Cormorant Garamond", serif; font-weight:600; letter-spacing:-.035em; }
+h1 { margin-top:28px; color:var(--ink); font-size:clamp(60px, 7vw, 104px); line-height:.87; }
+h1 em,h2 em { color:var(--petrol); font-style:italic; font-weight:500; }
+.hero-intro { max-width:340px; margin:32px 0 30px; color:#68594e; font-size:16px; line-height:1.65; }
+.button-primary { display:inline-flex; align-items:center; gap:14px; width:max-content; padding:15px 20px; background:var(--petrol); color:var(--paper); font-size:11px; letter-spacing:.1em; text-transform:uppercase; transition:transform .18s var(--ease-out), background .2s var(--ease-out); }
+.button-primary:hover { background:#0f3e46; transform:translateY(-2px); }
+.hero-note { margin-top:24px; color:#927e6b; font:italic 14px/1.5 "Cormorant Garamond", serif; }
+.hero-image-wrap { position:relative; min-height:680px; }
+.hero-image { width:100%; height:100%; min-height:680px; object-fit:cover; display:block; filter:saturate(.78) contrast(.96); }
+.hero-caption { position:absolute; right:26px; bottom:25px; display:flex; gap:15px; align-items:center; color:#fff; font-size:10px; letter-spacing:.13em; text-transform:uppercase; }
+.hero-caption span:first-child { opacity:.7; }
+.intro-strip { display:flex; align-items:center; gap:32px; padding:28px 5vw; background:var(--petrol); color:var(--paper); }
+.intro-strip p { max-width:650px; margin:0; font:italic 25px/1.1 "Cormorant Garamond", serif; }
+.strip-line { width:72px; height:1px; background:#b59b77; }
+.strip-small { color:#cdbda5; font:10px/1 "DM Sans", sans-serif!important; letter-spacing:.16em; text-transform:uppercase; }
+.section-pad { padding:120px 10vw; }
+.collection-section { background:var(--paper); }
+.section-heading { display:flex; justify-content:space-between; align-items:flex-end; gap:80px; margin-bottom:65px; }
+h2 { margin-top:25px; color:var(--ink); font-size:clamp(54px, 6vw, 83px); line-height:.88; }
+.section-heading > p { max-width:315px; margin:0 6vw 4px 0; color:#76665a; font-size:14px; line-height:1.75; }
+.editorial-grid { display:grid; grid-template-columns:minmax(0, 1fr) 180px; gap:35px; max-width:850px; margin:0 auto; }
+.editorial-card { position:relative; display:block; overflow:hidden; }
+.card-tall { aspect-ratio: 4/5; }
+.editorial-card img { width:100%; height:100%; display:block; object-fit:cover; filter:saturate(.78); transition:transform .55s var(--ease-out), filter .3s var(--ease-out); }
+.editorial-card:hover img { transform:scale(1.035); filter:saturate(.95); }
+.card-overlay { position:absolute; inset:auto 0 0; padding:90px 27px 26px; color:#fff; background:linear-gradient(transparent,rgba(27,20,15,.72)); }
+.card-overlay span { font-size:10px; letter-spacing:.15em; text-transform:uppercase; opacity:.75; }
+.card-overlay h3 { margin:8px 0 0; font-size:33px; line-height:.95; }
+.card-overlay svg { position:absolute; right:28px; bottom:28px; }
+.editorial-side-note { display:flex; flex-direction:column; align-items:center; justify-content:space-between; border-top:1px solid var(--sand); border-bottom:1px solid var(--sand); padding:20px 0; }
+.vertical-word { writing-mode:vertical-rl; color:var(--petrol); font-size:10px; font-weight:600; letter-spacing:.24em; }
+.editorial-side-note div { width:100%; }
+.editorial-side-note p { max-width:130px; margin:0 0 18px; color:#806e61; font:italic 23px/.95 "Cormorant Garamond", serif; }
+.atelier-section { display:grid; grid-template-columns:1.05fr .95fr; background:var(--sand); }
+.atelier-image { min-height:620px; }
+.atelier-image img { width:100%; height:100%; min-height:620px; object-fit:cover; display:block; filter:saturate(.72); }
+.atelier-copy { display:flex; flex-direction:column; justify-content:center; padding:80px 10vw 80px 8vw; }
+.atelier-copy h2 { color:var(--ink); }
+.atelier-copy p,.about-copy p { max-width:370px; margin:30px 0; color:#66564c; font-size:15px; line-height:1.8; }
+.text-link { display:inline-flex; align-items:center; gap:9px; width:max-content; padding-bottom:7px; border-bottom:1px solid var(--petrol); color:var(--petrol); font-size:11px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; transition:gap .2s var(--ease-out); }
+.text-link:hover { gap:14px; }
+.about-section { display:grid; grid-template-columns:.7fr 1.3fr; align-items:center; min-height:500px; background:var(--paper); }
+.about-mark { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:16px; color:#927e6b; text-align:center; font:italic 20px/1 "Cormorant Garamond", serif; }
+.about-mark img { width:86px; height:86px; object-fit:contain; opacity:.8; }
+.about-copy { padding-left:7vw; border-left:1px solid var(--sand); }
+.site-footer { display:grid; grid-template-columns:1.2fr 1.4fr .7fr; gap:30px; padding:55px 5vw 24px; background:#2e2925; color:var(--paper); }
+.footer-brand { display:flex; align-items:center; gap:12px; }
+.footer-brand img { width:42px; height:42px; filter:brightness(0) invert(1); opacity:.78; }
+.footer-brand small { display:block; }
+.footer-brand strong { font-size:28px; }
+.footer-brand span { color:#c8b99e; }
+.footer-info { color:#c9bdae; font-size:12px; line-height:1.6; }
+.footer-info p { display:flex; align-items:flex-start; gap:8px; margin:0 0 11px; }
+.footer-links { display:flex; flex-direction:column; align-items:flex-end; gap:14px; color:#e6dbc9; font-size:11px; text-transform:uppercase; letter-spacing:.1em; }
+.footer-links a { display:flex; align-items:center; gap:8px; }
+.footer-bottom { grid-column:1/-1; display:flex; justify-content:space-between; margin-top:38px; padding-top:18px; border-top:1px solid rgba(247,242,233,.15); color:#9f9284; font-size:10px; letter-spacing:.1em; text-transform:uppercase; }
+@media (max-width: 800px) { .topline { padding:9px 20px; } .topline span { max-width:190px; line-height:1.35; } .topline a { text-align:right; } .nav-wrap { padding:20px; } .brand strong { font-size:23px; } .menu-button { display:block; } .nav-links { display:none; position:absolute; top:78px; right:20px; left:20px; flex-direction:column; align-items:flex-start; gap:20px; padding:25px; background:#f7f2e9; border:1px solid var(--sand); box-shadow:0 16px 35px rgba(56,47,41,.12); } .nav-links.open { display:flex; } .hero-section { display:block; padding-left:0; } .hero-copy { padding:72px 25px 62px; } .hero-image-wrap,.hero-image { min-height:480px; } .hero-caption { right:18px; bottom:18px; } .intro-strip { display:block; padding:32px 25px; } .strip-line { display:block; margin:20px 0; } .section-pad { padding:78px 25px; } .section-heading { display:block; margin-bottom:42px; } .section-heading > p { margin:28px 0 0; } .editorial-grid { grid-template-columns:1fr; } .editorial-side-note { min-height:130px; flex-direction:row; padding:18px 0; } .vertical-word { writing-mode:initial; } .atelier-section { display:block; } .atelier-image,.atelier-image img { min-height:390px; } .atelier-copy { padding:70px 25px 78px; } .about-section { display:block; min-height:0; } .about-mark { padding:60px 25px 30px; } .about-copy { padding:30px 25px 75px; border-left:0; } .site-footer { display:block; padding:48px 25px 22px; } .footer-info { margin:34px 0; } .footer-links { align-items:flex-start; } .footer-bottom { margin-top:42px; gap:15px; flex-direction:column; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } *,*::before,*::after { transition-duration:.01ms!important; animation-duration:.01ms!important; } }

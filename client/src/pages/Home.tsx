@@ -49,10 +49,10 @@ export default function Home() {
       <section id="inicio" className="hero-section">
         <div className="hero-copy">
           <SectionLabel>Uma forma de se apresentar ao mundo</SectionLabel>
-          <h1>Vista o que<br /><em>representa</em> você.</h1>
-          <p className="hero-intro">Moda modesta pensada para acompanhar a sua rotina com elegância, conforto e propósito.</p>
-          <a className="button-primary" href="#colecao">Conheça a curadoria <ArrowUpRight size={17} /></a>
-          <p className="hero-note">Peças escolhidas com cuidado. Atendimento próximo, do nosso jeito.</p>
+          <h1>Roupa bonita<br /><em>para você.</em></h1>
+          <p className="hero-intro">Vestidos, conjuntos e fardamentos para vestir bem, com conforto e propósito.</p>
+          <a className="button-primary" href="#colecao">Ver roupas <ArrowUpRight size={17} /></a>
+          <p className="hero-note">Gostou de uma peça? Chame no WhatsApp.</p>
         </div>
         <div className="hero-image-wrap">
           <img src={heroImage} alt="Mulher usando vestido modesto em uma boutique" className="hero-image" />
@@ -61,27 +61,33 @@ export default function Home() {
       </section>
 
       <section className="intro-strip">
-        <p>Uma boutique para quem entende que vestir-se também é uma maneira de cuidar de si.</p>
+        <p>Vista-se bem. Sinta-se bem. Viva o seu propósito.</p>
         <span className="strip-line" />
-        <p className="strip-small">Serra · Espírito Santo</p>
+        <p className="strip-small">Atendimento em Serra e para todo o Brasil</p>
       </section>
 
       <section id="colecao" className="collection-section section-pad">
         <div className="section-heading">
           <div>
             <SectionLabel>A curadoria</SectionLabel>
-            <h2>Escolhas para<br /><em>dias importantes.</em></h2>
+            <h2>Veja as<br /><em>novidades.</em></h2>
           </div>
-          <p>Uma seleção de peças com caimento, presença e discrição. Para a igreja, para o trabalho, para as ocasiões que pedem algo especial — e para todos os dias no meio delas.</p>
+          <p>Escolha uma categoria, veja as peças e fale com a gente para saber tamanho, cor e valor.</p>
         </div>
         <div className="editorial-grid">
-          <a className="editorial-card card-tall" href={whatsappUrl} target="_blank" rel="noreferrer">
-            <img src={dressesImage} alt="Vestidos modestos em uma arara de boutique" />
-            <div className="card-overlay"><span>01 / Coleção</span><h3>Vestidos &amp; conjuntos</h3><ArrowUpRight size={18} /></div>
-          </a>
+          <div className="gallery-grid">
+            <a className="editorial-card card-tall" href={whatsappUrl} target="_blank" rel="noreferrer">
+              <img src={dressesImage} alt="Vestidos modestos em uma arara de boutique" />
+              <div className="card-overlay"><span>01 / Vestidos</span><h3>Vestidos bonitos e confortáveis</h3><ArrowUpRight size={18} /></div>
+            </a>
+            <a className="editorial-card card-tall gallery-second" href={whatsappUrl} target="_blank" rel="noreferrer">
+              <img src={heroImage} alt="Look modesto em tons quentes" />
+              <div className="card-overlay"><span>02 / Conjuntos</span><h3>Prontos para usar</h3><ArrowUpRight size={18} /></div>
+            </a>
+          </div>
           <div className="editorial-side-note">
-            <span className="vertical-word">MODA MODESTA</span>
-            <div><p>Os detalhes fazem a diferença.</p><span className="tiny-rule" /></div>
+            <span className="vertical-word">ESCOLHA COM CALMA</span>
+            <div><p>Chame a gente. Vamos ajudar.</p><span className="tiny-rule" /></div>
           </div>
         </div>
       </section>
@@ -90,15 +96,15 @@ export default function Home() {
         <div className="atelier-image"><img src={uniformsImage} alt="Fardamentos personalizados organizados em um ateliê" /></div>
         <div className="atelier-copy">
           <SectionLabel>Para vestir uma comunidade</SectionLabel>
-          <h2>Fardamentos<br /><em>com identidade.</em></h2>
-          <p>Desenvolvemos fardamentos personalizados para igrejas e departamentos: jovens, senhoras, crianças, obreiros e corais. Cada pedido é tratado com atenção para que o resultado represente o propósito de vocês.</p>
-          <a className="text-link" href={whatsappUrl} target="_blank" rel="noreferrer">Conversar sobre um projeto <ArrowUpRight size={16} /></a>
+          <h2>Fardamentos<br /><em>para o seu grupo.</em></h2>
+          <p>Fazemos fardamentos para igrejas e departamentos. Envie sua ideia e peça um orçamento pelo WhatsApp.</p>
+          <a className="text-link" href={whatsappUrl} target="_blank" rel="noreferrer">Pedir orçamento <ArrowUpRight size={16} /></a>
         </div>
       </section>
 
       <section id="sobre" className="about-section section-pad">
         <div className="about-mark"><img src={markImage} alt="" /><span>Desde a escolha<br />até o encontro</span></div>
-        <div className="about-copy"><SectionLabel>Jeová Jireh</SectionLabel><h2>Um atendimento<br /><em>que olha de perto.</em></h2><p>Você não precisa escolher sozinha. Conte o que procura, para qual ocasião e como gosta de se sentir. A gente ajuda a encontrar a peça certa — com tempo, conversa e atenção aos detalhes.</p><a className="text-link" href={whatsappUrl} target="_blank" rel="noreferrer">Falar com a loja <MessageCircle size={16} /></a></div>
+        <div className="about-copy"><SectionLabel>Jeová Jireh</SectionLabel><h2>Fale com<br /><em>a gente.</em></h2><p>Diga o que você procura. A gente ajuda com tamanho, cor e combinação.</p><a className="text-link" href={whatsappUrl} target="_blank" rel="noreferrer">Chamar no WhatsApp <MessageCircle size={16} /></a></div>
       </section>
 
       <footer className="site-footer">
@@ -107,6 +113,7 @@ export default function Home() {
         <div className="footer-links"><a href="https://www.instagram.com/jeovajireh_modamodesta/" target="_blank" rel="noreferrer"><Instagram size={17} /> Instagram</a><a href={whatsappUrl} target="_blank" rel="noreferrer">WhatsApp <ArrowUpRight size={14} /></a></div>
         <div className="footer-bottom"><span>Vista-se com propósito.</span><span>© 2026 Jeová Jireh Moda Modesta</span></div>
       </footer>
+      <a className="mobile-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer"><MessageCircle size={19} /> Falar no WhatsApp</a>
     </main>
   );
 }

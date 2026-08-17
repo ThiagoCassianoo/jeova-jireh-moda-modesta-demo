@@ -1,4 +1,12 @@
-# Nova etapa — carrossel de ofertas no topo
+# Nova etapa — carrossel responsivo estruturado
+
+- [ ] Usar as imagens enviadas como base visual, sem depender da arte inteira como banner rígido.
+- [ ] Separar título, preço, benefício e CTA em HTML editável.
+- [ ] Criar composição própria para desktop e celular.
+- [ ] Otimizar o tamanho e o recorte das imagens.
+- [ ] Validar leitura, proporção e posicionamento em ambos os formatos.
+
+## Etapas anteriores
 
 - [ ] Usar os dois banners enviados pelo usuário como slides reais.
 - [ ] Colocar o carrossel imediatamente abaixo da navegação principal.

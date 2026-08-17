@@ -18,8 +18,8 @@ const categories = [
 ];
 
 const banners = [
-  { image: bannerVestido, alt: "Vestido Sensorial com desconto exclusivo", href: whatsappUrl },
-  { image: bannerFrete, alt: "Frete grátis em compras acima de duzentos e noventa e nove reais", href: whatsappUrl },
+  { image: bannerVestido, alt: "Vestido Sensorial azul", eyebrow: "Destaque da semana", title: "Vestido Sensorial", oldPrice: "R$209,90", price: "R$139,90", benefit: "Desconto especial para você vestir bem e com conforto.", button: "Eu quero", href: whatsappUrl },
+  { image: bannerFrete, alt: "Oferta de frete grátis", eyebrow: "Uma facilidade para você", title: "Não pague frete", oldPrice: "", price: "Acima de R$299", benefit: "Nas compras acima de R$299, o frete é por nossa conta.", button: "Aproveitar", href: whatsappUrl },
 ];
 
 const products = [
@@ -62,7 +62,10 @@ export default function Home() {
 
       <section className="offer-carousel" aria-label="Ofertas em destaque">
         <div className="offer-track" style={{ transform: `translateX(-${slide * 100}%)` }}>
-          {banners.map((banner, index) => <a className="offer-slide" href={banner.href} target="_blank" rel="noreferrer" aria-label={`Ver oferta ${index + 1}`} key={banner.image}><img src={banner.image} alt={banner.alt} /></a>)}
+          {banners.map((banner, index) => <article className={`offer-slide offer-slide-${index + 1}`} key={banner.image}>
+            <div className="offer-media"><img src={banner.image} alt={banner.alt} /></div>
+            <div className="offer-copy"><p className="offer-eyebrow">{banner.eyebrow}</p><h2>{banner.title}</h2>{banner.oldPrice && <p className="offer-price"><s>{banner.oldPrice}</s> <strong>{banner.price}</strong></p>}{!banner.oldPrice && <p className="offer-price"><strong>{banner.price}</strong></p>}<p className="offer-benefit">{banner.benefit}</p><a className="offer-button" href={banner.href} target="_blank" rel="noreferrer">{banner.button} <ArrowUpRight size={15} /></a></div>
+          </article>)}
         </div>
         <button className="offer-arrow offer-prev" aria-label="Oferta anterior" onClick={() => setSlide((slide - 1 + banners.length) % banners.length)}><ChevronRight size={22} /></button>
         <button className="offer-arrow offer-next" aria-label="Próxima oferta" onClick={() => setSlide((slide + 1) % banners.length)}><ChevronRight size={22} /></button>

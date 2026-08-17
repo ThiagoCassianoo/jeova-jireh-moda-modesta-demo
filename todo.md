@@ -1,4 +1,13 @@
-# Nova etapa — nova logomarca e tipografia
+# Nova etapa — banner recriado do zero
+
+- [ ] Remover a imagem e a composição estruturada dos banners anteriores.
+- [ ] Remover as regras CSS específicas de recorte, zoom e texto sobreposto.
+- [ ] Usar a nova arte horizontal como imagem única do carrossel.
+- [ ] Preservar a proporção e a leitura completa da arte.
+- [ ] Manter apenas clique para WhatsApp, setas, indicadores e autoplay.
+- [ ] Validar em mobile e desktop.
+
+## Etapas anteriores
 
 - [ ] Preparar a logomarca enviada para uso sobre fundo claro.
 - [ ] Substituir o símbolo atual no cabeçalho, rodapé, carrossel e favicon visual.

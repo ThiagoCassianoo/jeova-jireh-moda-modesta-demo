@@ -1,13 +1,12 @@
 // Direção visual: loja mobile-first com clima de pôr do sol frio, linguagem simples, referências de luz/terra/linho e foco em atendimento por WhatsApp.
 import { ArrowRight, ArrowUpRight, ChevronRight, Instagram, MapPin, Menu, MessageCircle, Search, X } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const heroImage = "/manus-storage/jeova-hero-editorial_daf7e197.jpg";
 const dressesImage = "/manus-storage/jeova-categorias-vestidos_99c68712.jpg";
 const uniformsImage = "/manus-storage/jeova-fardamentos-atelier_53f367bb.jpg";
 const markImage = "/manus-storage/jeova-jireh-logo-transparent_21012a06.png";
-const bannerVestido = "/manus-storage/jeova-banner-vestido_e64ec153.png";
-const bannerFrete = "/manus-storage/jeova-banner-frete_8e2fbc67.png";
+const bannerImage = "/manus-storage/jeova-banner-horizontal-final_74fd210c.png";
 const whatsappUrl = "https://wa.me/5527988807140";
 
 const categories = [
@@ -15,11 +14,6 @@ const categories = [
   { name: "Conjuntos", image: heroImage, alt: "Conjunto modesto" },
   { name: "Fardamentos", image: uniformsImage, alt: "Fardamentos para igrejas" },
   { name: "Novidades", image: dressesImage, alt: "Novidades da loja" },
-];
-
-const banners = [
-  { image: bannerVestido, alt: "Vestido Sensorial azul", eyebrow: "Destaque da semana", title: "Vestido Sensorial", oldPrice: "R$209,90", price: "R$139,90", benefit: "Desconto especial para você vestir bem e com conforto.", button: "Eu quero", href: whatsappUrl },
-  { image: bannerFrete, alt: "Oferta de frete grátis", eyebrow: "Uma facilidade para você", title: "Não pague frete", oldPrice: "", price: "Acima de R$299", benefit: "Nas compras acima de R$299, o frete é por nossa conta.", button: "Aproveitar", href: whatsappUrl },
 ];
 
 const products = [
@@ -39,13 +33,7 @@ function ProductCard({ product }: { product: (typeof products)[number] }) {
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [slide, setSlide] = useState(0);
   const closeMenu = () => setMenuOpen(false);
-
-  useEffect(() => {
-    const timer = window.setInterval(() => setSlide((current) => (current + 1) % banners.length), 5000);
-    return () => window.clearInterval(timer);
-  }, []);
 
   return (
     <main className="shop-shell">
@@ -61,15 +49,7 @@ export default function Home() {
       </header>
 
       <section className="offer-carousel" aria-label="Ofertas em destaque">
-        <div className="offer-track" style={{ transform: `translateX(-${slide * 100}%)` }}>
-          {banners.map((banner, index) => <article className={`offer-slide offer-slide-${index + 1}`} key={banner.image}>
-            <div className="offer-media"><img src={banner.image} alt={banner.alt} /></div>
-            <div className="offer-copy"><p className="offer-eyebrow">{banner.eyebrow}</p><h2>{banner.title}</h2>{banner.oldPrice && <p className="offer-price"><s>{banner.oldPrice}</s> <strong>{banner.price}</strong></p>}{!banner.oldPrice && <p className="offer-price"><strong>{banner.price}</strong></p>}<p className="offer-benefit">{banner.benefit}</p><a className="offer-button" href={banner.href} target="_blank" rel="noreferrer">{banner.button} <ArrowUpRight size={15} /></a></div>
-          </article>)}
-        </div>
-        <button className="offer-arrow offer-prev" aria-label="Oferta anterior" onClick={() => setSlide((slide - 1 + banners.length) % banners.length)}><ChevronRight size={22} /></button>
-        <button className="offer-arrow offer-next" aria-label="Próxima oferta" onClick={() => setSlide((slide + 1) % banners.length)}><ChevronRight size={22} /></button>
-        <div className="offer-dots">{banners.map((banner, index) => <button key={banner.image} aria-label={`Ir para oferta ${index + 1}`} className={index === slide ? "active" : ""} onClick={() => setSlide(index)} />)}</div>
+        <a className="offer-single" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="Ver ofertas da Jeová Jireh no WhatsApp"><img src={bannerImage} alt="Ofertas Jeová Jireh Moda Modesta" /></a>
       </section>
 
       <section id="inicio" className="shop-hero">

@@ -299,3 +299,11 @@ h2 { margin-top:25px; color:var(--ink); font-size:clamp(54px, 6vw, 83px); line-h
 .brand-logo, .about-strip > img, .footer-brand img { mix-blend-mode:normal; }
 
 .brand-logo, .about-strip > img, .footer-brand img { filter:saturate(1.35) contrast(1.12); }
+
+/* Banner final do zero: uma arte única, inteira e clicável. */
+.offer-carousel { width:100%; overflow:hidden; background:#f3f1ed; }
+.offer-single { display:block; width:100%; line-height:0; }
+.offer-single img { display:block; width:100%; height:auto; aspect-ratio:1024 / 369; object-fit:contain; object-position:center; }
+@media (max-width:800px) {
+  .offer-single img { min-height:140px; }
+}

@@ -2,11 +2,11 @@
 import { ArrowRight, ArrowUpRight, ChevronRight, Instagram, MapPin, Menu, MessageCircle, Search, X } from "lucide-react";
 import { useState } from "react";
 
-const heroImage = "/manus-storage/jeova-hero-editorial_daf7e197.jpg";
-const dressesImage = "/manus-storage/jeova-categorias-vestidos_99c68712.jpg";
-const uniformsImage = "/manus-storage/jeova-fardamentos-atelier_53f367bb.jpg";
-const markImage = "/manus-storage/jeova-jireh-logo-transparent_21012a06.png";
-const bannerImage = "/manus-storage/jeova-banner-horizontal-final_74fd210c.png";
+const heroImage = "/images/jeova-hero-editorial_daf7e197.webp";
+const dressesImage = "/images/jeova-categorias-vestidos_99c68712.webp";
+const uniformsImage = "/images/jeova-fardamentos-atelier_53f367bb.webp";
+const markImage = "/images/jeova-jireh-logo-transparent_21012a06.png";
+const bannerImage = "/images/jeova-banner-corpo-inteiro_5b87649e.png";
 const whatsappUrl = "https://wa.me/5527988807140";
 
 const categories = [

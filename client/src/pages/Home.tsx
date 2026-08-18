@@ -1,6 +1,6 @@
 // Direção visual: loja mobile-first com clima de pôr do sol frio, linguagem simples, referências de luz/terra/linho e foco em atendimento por WhatsApp.
 import { ArrowRight, ArrowUpRight, ChevronRight, Instagram, MapPin, Menu, MessageCircle, Search, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const heroImage = "/images/jeova-hero-editorial_daf7e197.webp";
 const dressesImage = "/images/jeova-categorias-vestidos_99c68712.webp";
